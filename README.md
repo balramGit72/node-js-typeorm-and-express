@@ -4,6 +4,8 @@ Install the required packages using npm:
 npm install express express-validator typeorm pg reflect-metadata
 npm install @types/express @types/express-validator @types/node typescript ts-node
 
+# create folder structure 
+ mkdir -p src/{controllers,entities,middleware,routes,utils,swagger} && touch src/controllers/UserController.ts src/entities/User.ts src/middleware/authMiddleware.ts src/middleware/errorMiddleware.ts src/middleware/validation.ts src/routes/userRoutes.ts src/utils/helpers.ts src/utils/config.ts src/utils/constants.ts src/swagger/swagger.ts src/swagger/userSwagger.ts src/index.ts ormconfig.json tsconfig.json
 
 Create TypeScript Configuration:
 Create a tsconfig.json file in the root of your project. Here's a basic configuration:
@@ -28,11 +30,25 @@ Create a tsconfig.json file in the root of your project. Here's a basic configur
 Folder Structure:
 - src
   - controllers
+    -UserControllers.ts
   - entities
+    - User.ts
   - middleware
+    -authMiddleware.ts
+    -errorMiddleware.ts
+    -validation.ts
   - routes
+   -userRoutes.ts
   - utils
+    -helpers.ts
+    -config.ts
+    -constants.ts
+  -swagger
+    -swagger.ts
+    -userSwagger.ts
   - index.ts
+-ormconfig.json
+-tsconfig.json
 
 
 Run the Project:
